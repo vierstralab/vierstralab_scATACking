@@ -1,7 +1,7 @@
 # vierstralab_scATACking
 In this repository you can find python scrips for scATAC-seq data analysis with excamples of data and graphs. Also you may find the conda enviroment with all of the dependencies needed. Before working with thethese scripts, you should do the following steps:
 
-1. Exclude ENCODE blacklist regions from each of the fragment files of a sample and intersecting the resulting files with the GRCh38 version of the human reference genome divided by 500 kb chunks (also having the ENCODE blacklist regions excluded); the result is the count matrix showing how many intersections each fragment found in cells in this sample has with each of the 500 kb genomic chunks, sets of the genomic chuncks (index_mapping) and cell barcodes of the sample (barcodes_map)
+1. Exclude ENCODE blacklist regions from each of the fragment files of a sample and intersecting the resulting files with the GRCh38 version of the human reference genome divided by 500 kb chunks (also having the ENCODE blacklist regions excluded); the result is the count matrix showing how many intersections each fragment found in cells in this sample has with each of the 500 kb genomic chunks, sets of the genomic chuncks (index_mapping) and cell barcodes of the sample (barcodes_map); the nextflow pipeline and the scripts of this step are published here: `https://github.com/vierstralab/nf-scATAC-mapping`
 2. Count the number of fragments in each of the cells in the sample researched
 
 Here is the algorythm of the following analysis:
